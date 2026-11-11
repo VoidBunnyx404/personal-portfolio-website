@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio website" />
+  <title>Amrit Raj | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- HEADER: logo, navigation links and dark/light mode button -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="logo" href="#home"><span class="logo-mark">&lt;/&gt;</span>Amrit Raj <span class="logo-dot">.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#education">Education</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#hobbies">Hobbies</a>
+        <a class="nav-link" href="#achievements">Achievements</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Switch colour theme" title="Toggle dark/light mode">☾</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- SECTION 1: HOME - name, introduction, profile photo and welcome links -->
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> WELCOME TO MY PORTFOLIO <span class="eyebrow-line"></span></p>
+          <p class="hello">Hello, I'm</p>
+          <h1><span class="gradient-text">Amrit Raj</span></h1>
+          <h2 class="hero-subtitle">Student <span class="muted">|</span> Aspiring Web Developer</h2>
+          <p class="hero-description">I'm a student who enjoys learning new things, solving problems and turning creative ideas into simple digital experiences.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#about">More about me <span>↗</span></a>
+            <a class="btn btn-outline" href="#projects">View my projects</a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://github.com/VoidBunnyx404" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/amrit-raj-248a84421/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            <a href="mailto:your.email@example.com">Email ↗</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="profile-frame">
+            <!-- Replace profile.jpg with your own photo. Keep the image in this project folder. -->
+            <img src="photo.jpeg" alt="Your profile" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+            <div class="avatar-fallback">YN</div>
+          </div>
+          <div class="floating-tag tag-top">✦ Curious mind</div>
+          <div class="floating-tag tag-bottom"><span class="status-dot"></span> Open to learning</div>
+          <span class="sparkle sparkle-one">✳</span><span class="sparkle sparkle-two">✦</span>
+        </div>
+      </div>
+      <div class="container hero-bottom"><span>SCROLL TO EXPLORE</span><span class="scroll-line"></span><span>01 / 08</span></div>
+    </section>
+
+    <!-- SECTION 2: ABOUT ME - personal introduction, interests and goals -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">A LITTLE INTRODUCTION</p><h2>About <span class="gradient-text">Me</span></h2><p class="section-lead">A little about who I am, what I enjoy and where I want to go.</p></div>
+        <div class="about-grid">
+          <div class="about-card about-main">
+            <span class="card-kicker">WHO I AM</span>
+            <h3>Learning, creating<br>and growing every day.</h3>
+            <p>Heyy! I'm <strong>Amrit</strong>, a student currently studying <strong>Computer Science Engineering &amp; AI	
+&#47;ML</strong>. I am interested in technology, creativity and discovering how things work.</p>
+            <p>My goal is to keep improving my skills, work on meaningful projects and become a confident developer.</p>
+            <a class="text-link" href="#contact">Let's connect <span>↗</span></a>
+          </div>
+          <div class="about-side">
+            <div class="mini-card"><span class="mini-icon">⌘</span><div><h4>My interest</h4><p>Web development, design and technology</p></div></div>
+            <div class="mini-card"><span class="mini-icon">◎</span><div><h4>My approach</h4><p>Stay curious, practise and keep learning</p></div></div>
+            <div class="mini-card"><span class="mini-icon">✧</span><div><h4>My goal</h4><p>Build useful things and make a positive impact</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: EDUCATION - school and college details in a timeline -->
+    <section class="section section-soft" id="education">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">MY LEARNING JOURNEY</p><h2><span class="gradient-text">Education</span></h2><p class="section-lead">The places and experiences that are shaping my journey.</p></div>
+        <div class="timeline">
+          <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-date">2026 – PRESENT</div><div class="timeline-card"><h3>BossCoder School of Technology</h3><p class="timeline-meta">B.Tech · CSE &amp; AI&#47;ML</p><p>Currently pursuing my B.Tech in Computer Science & Engineering (AI & ML), developing a strong foundation in programming and web development. Exploring Java, Python, and HTML while continuously improving my problem-solving and technical skills.</p></div></article>
+          <article class="timeline-item"><span class="timeline-dot"></span><div class="timeline-date">2023 – 2025</div><div class="timeline-card"><h3>Senior Secondary School</h3><p class="timeline-meta">Allen Career Institute · Science</p><p>Prepared for JEE Main and built a foundation for maths and science at Allen Career Institute, receiving a ₹50,000 scholarship in each of two consecutive years, amounting to ₹1,00,000 in total.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: SKILLS - technical and personal skills with progress bars -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">WHAT I'M LEARNING</p><h2>My <span class="gradient-text">Skills</span></h2><p class="section-lead">A mix of technical abilities and everyday strengths.</p></div>
+        <div class="skills-layout">
+          <div class="skill-panel"><h3>Technical skills</h3>
+            <div class="skill"><div class="skill-label"><span>HTML</span><span>70%</span></div><div class="progress"><span style="width:70%"></span></div></div>
+            <div class="skill"><div class="skill-label"><span>CSS</span><span>60%</span></div><div class="progress"><span style="width:60%"></span></div></div>
+            <div class="skill"><div class="skill-label"><span>JavaScript</span><span>0%</span></div><div class="progress"><span style="width:0%"></span></div></div>
+            <div class="skill"><div class="skill-label"><span>Python</span><span>5%</span></div><div class="progress"><span style="width:5%"></span></div></div>
+          </div>
+          <div class="skill-panel"><h3>Personal skills</h3>
+            <div class="skill"><div class="skill-label"><span>Communication</span><span>80%</span></div><div class="progress"><span style="width:80%"></span></div></div>
+            <div class="skill"><div class="skill-label"><span>Teamwork</span><span>85%</span></div><div class="progress"><span style="width:85%"></span></div></div>
+            <div class="skill"><div class="skill-label"><span>Problem solving</span><span>65%</span></div><div class="progress"><span style="width:65%"></span></div></div>
+            <div class="skill"><div class="skill-label"><span>Creativity</span><span>75%</span></div><div class="progress"><span style="width:75%"></span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: PROJECTS - cards showing project names, details and technologies -->
+    <section class="section section-soft" id="projects">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">THINGS I'VE MADE</p><h2>Featured <span class="gradient-text">Projects</span></h2><p class="section-lead">A few projects I've worked on. Replace these sample cards with your own work.</p></div>
+        <div class="project-grid">
+          <article class="project-card"><div class="project-art art-purple"><span>01</span><div class="art-symbol">✧</div></div><div class="project-content"><div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><h3>Personal Portfolio</h3><p>A responsive website that introduces me and showcases my skills, education and projects.</p><a class="text-link" href="#" target="_blank">View project <span>↗</span></a></div></article>
+          <article class="project-card"><div class="project-art art-blue"><span>02</span><div class="art-symbol">▦</div></div><div class="project-content"><div class="tag-list"><span>HTML</span><span>CSS</span><span>JS</span><span>Vite</span><span>React</span></div><h3>LogMind AI</h3><p>A hackathon project exploring an AI-inspired log investigation and incident-response platform.</p><a class="text-link" href="https://github.com/XYZ-4444/LogMind-Ai" target="_blank">View project <span>↗</span></a></div></article>
+          <article class="project-card"><div class="project-art art-orange"><span>03</span><div class="art-symbol">⌘</div></div><div class="project-content"><div class="tag-list"><span>Technology</span><span>HTML</span><span>CSS</span><span>Web Dev</span></div><h3>Restaurant Menu Website</h3><p>A responsive restaurant menu website built collaboratively, featuring a clean and user-friendly interface.</p><a class="text-link" href="https://github.com/Divyanshraturi/Restaurant-Menu-Website" target="_blank">View project <span>↗</span></a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: HOBBIES - interests outside academics -->
+    <section class="section" id="hobbies">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">BEYOND THE SCREEN</p><h2>Hobbies & <span class="gradient-text">Interests</span></h2><p class="section-lead">The things I enjoy doing in my free time.</p></div>
+        <div class="hobby-grid">
+          <div class="hobby-card"><span>📚</span><h3>Reading</h3><p>Exploring web novels, light novels, and comics.</p></div>
+          <div class="hobby-card"><span>🎧</span><h3>Music</h3><p>Listening to music and discovering new sounds.</p></div>
+          <div class="hobby-card"><span>🎨</span><h3>Sketching & Art</h3><p>Creating sketches and bringing ideas to life through art.</p></div>
+          <div class="hobby-card"><span>💻</span><h3>Technology</h3><p>Exploring tools, apps and how technology works.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: ACHIEVEMENTS - certificates, awards and participation -->
+    <section class="section section-soft" id="achievements">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">MILESTONES</p><h2>My <span class="gradient-text">Achievements</span></h2><p class="section-lead">Certificates, awards and experiences I'm proud of.</p></div>
+        <div class="achievement-list">
+          <article class="achievement"><div class="achievement-icon">🏅</div><div><h3>Ideathon 2026 – Certificate of Participation</h3><p>Bosscoder School Of Technology · 2026</p><p class="achievement-desc">Participated in Ideathon and learnt about team-working and website making.</p></div></article>
+          <article class="achievement"><div class="achievement-icon">🎓</div><div><h3>Workshop / Course Completion</h3><p>be10x · 2026</p><p class="achievement-desc">Successfully completed the AI Tools & Claude Workshop conducted by be10x on September 6, 2026.</p></div></article>
+          <article class="achievement"><div class="achievement-icon">⭐</div><div><h3>Smart India Hackathon 2026 – Participation</h3><p>SIH selcetion · 2026</p><p class="achievement-desc">Participated in SIH 2026 and collaborated with a team to develop an AI-powered cattle feed solution.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: CONTACT - contact details and form with JavaScript validation -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">SAY HELLO</p><h2>Let's <span class="gradient-text">Connect</span></h2><p class="section-lead">Have a question or want to work together? Send me a message.</p></div>
+        <div class="contact-grid">
+          <div class="contact-info"><h3>Get in touch</h3><p>I'm always happy to connect, learn and discuss new ideas.</p><a href="mailto:your.email@example.com" class="contact-detail"><span>✉</span> stressed.student.at.cossboder@gmail.com</a><a href="https://github.com/" class="contact-detail" target="_blank" rel="noreferrer"><span>⌘</span> github.com/VoidBunnyx404</a><a href="https://linkedin.com/" class="contact-detail" target="_blank" rel="noreferrer"><span>in</span> linkedin.com/in/amrit-raj-248a84421/</a></div>
+          <form class="contact-form" id="contactForm" novalidate>
+            <label for="name">Your name</label><input id="name" name="name" type="text" placeholder="Enter your name" required>
+            <label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com" required>
+            <label for="message">Your message</label><textarea id="message" name="message" rows="4" placeholder="Write your message..." required></textarea>
+            <button class="btn btn-primary" type="submit">Send message <span>↗</span></button>
+            <p class="form-feedback" id="formFeedback" role="status"></p>
+          </form>
+        </div>
+        <p class="form-disclaimer">This demo form checks your details in the browser. It does not send or store messages.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER: copyright/name and link back to the top -->
+  <footer class="footer"><div class="container footer-inner"><a class="logo" href="#home"><span class="logo-mark">&lt;/&gt;</span> Amrit Raj <span class="logo-dot">.</span></a><p>Designed & built by Amrit · <span id="year"></span></p><a href="#home" class="back-top">Back to top ↑</a></div></footer>
+  <!-- Load JavaScript after the page content so the elements are ready -->
+  <script src="script.js"></script>
+</body>
+</html>
